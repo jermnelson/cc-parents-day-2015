@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Colorado College's collaboration with the Library of Congress: Building a BIBFRAME Catalog</title>
+  <meta name="description" content="Presentation by Jeremy Nelson for Colorado College Parents Weekend">
+  <meta name="author" content="Jeremy Nelson">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT  -->
+ {#  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> #}
+
+  <!-- CSS  -->
+
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/normalize.css") }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename="css/skeleton.css") }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename="images/favicon.png") }}">
+  <style>
+   @font-face {
+    font-family: 'aleolight';
+    src: url("{{ url_for('static', filename='fonts/Aleo-Light-webfont.eot') }}");
+    src: url("{{ url_for('static', filename='fonts/Aleo-Light-webfont.eot?#iefix') }}") format('embedded-opentype'),
+         url("{{ url_for('static', filename='fonts/Aleo-Light-webfont.woff') }}") format('woff'),
+         url("{{ url_for('static', filename='fonts/Aleo-Light-webfont.ttf') }}") format('truetype'),
+         url("{{ url_for('static', filename='fonts/Aleo-Light-webfont.svg#aleolight') }}") format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+   }
+    
+    body {
+      font-family: 'aleolight', Verdana, sans-serif;
+    }
+    h5 a {
+       color: rgb(253, 190, 15);
+       text-decoration: none;
+   }
+  </style>
+
+</head>
+<body>
+  {% block main %}
+  <!-- Primary Page Layout -->
+  <div class="container">
+    <div class="row">
+      <section class="eight column" style="margin-top: 5%">
+        <h5>
+        <a href="{{ url_for('home') }}">http://intro2libsys.info/cc-parents-weekend-2015</a>
+       </h5>
+     </section> 
+    </div>
+    <div class="row">
+      <div class="eight column" style="margin-top: 5%">
+        <img src="{{ url_for('static', filename='images/cc-tiger-logo.png') }}" class="u-pull-right">
+       
+        <h1>Building a Better Catalog</h1>
+        <h2>Colorado College's Collaboration with the Library of Congress</h2>
+        <h4>Jeremy Nelson<br>Metadata and Systems Librarian<br>Colorado College</h4>
+
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+     </div>
+  </div>
+  {% endblock %}
+<!-- End Document  -->
+  </body>
+</html>
