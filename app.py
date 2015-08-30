@@ -4,6 +4,10 @@ from flask import Flask, abort, render_template
 
 app = Flask(__name__)
 
+@app.route("/<name>")
+def slide(name):
+    return render_template("slides/{}.html".format(name))
+
 @app.route("/")
 def home():
     return render_template('index.html')
