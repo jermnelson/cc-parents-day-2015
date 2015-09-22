@@ -6,3 +6,11 @@
    <h1>Semantic Web</h1>
   </div>
 {% endblock %}
+
+
+{% block slide_nav %}
+<div class="container">
+ <a href="{{ url_for('slide', name='legacy-data-formats') }}" class="button slide-nav">&lt;&lt; Legacy Data Formats</a>
+ <a href="{{ url_for('slide', name='bibframe') }}" class="button slide-nav u-pull-right button-primary">BIBFRAME &gt;&gt;</a>
+</div>
+{% endblock %}

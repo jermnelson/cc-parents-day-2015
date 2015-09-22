@@ -9,3 +9,11 @@
     <strong>C</strong>arrier. 
   </div>
 {% endblock %}
+
+{% block slide_nav %}
+<div class="container">
+<a href="{{ url_for('slide', name='library-catalog') }}" class="button slide-nav">&lt;&lt; The Library Catalog</a>
+<a href="{{ url_for('slide', name='semantic-web') }}" class="button slide-nav u-pull-right button-primary">Semantic Web &gt;&gt;</a>
+</div>
+{% endblock %}
+

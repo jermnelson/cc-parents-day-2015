@@ -6,3 +6,9 @@
    <h1>TIGER Catalog</h1>
   </div>
 {% endblock %}
+
+{% block slide_nav %}
+<div class="container">
+ <a href="{{ url_for('slide', name='bibcat') }}" class="button slide-nav">&lt;&lt; BIBCAT</a>
+</div>
+{% endblock %}

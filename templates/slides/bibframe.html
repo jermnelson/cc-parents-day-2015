@@ -6,3 +6,10 @@
    <h1>BIBFRAME</h1>
   </div>
 {% endblock %}
+
+{% block slide_nav %}
+<div class="container">
+  <a href="{{ url_for('slide', name='semantic-web') }}" class="button slide-nav">&lt;&lt; Semantic Web</a>
+  <a href="{{ url_for('slide', name='early-experiments') }}" class="button slide-nav u-pull-right button-primary">Early Experiments &gt;&gt;</a>
+</div>
+{% endblock %}

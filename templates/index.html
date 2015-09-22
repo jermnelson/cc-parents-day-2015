@@ -1,1 +1,27 @@
 {% extends 'base.html' %}
+
+  {% block main %}
+  <!-- Primary Page Layout -->
+  <div class="container">
+
+    <div class="row">
+      <div class="eight column" style="margin-top: 5%">
+        <img src="{{ url_for('static', filename='images/cc-tiger-logo.png') }}" class="u-pull-right">
+       
+        <h1>Building a Better Catalog</h1>
+        <h2>Colorado College's Collaboration with the Library of Congress</h2>
+        <h4>Jeremy Nelson<br>Metadata and Systems Librarian<br>Colorado College</h4>
+       
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+    <a href="{{ url_for('slide', name='library-catalog') }}" class="button slide-nav">The Library Catalog</a>
+    <a href="{{ url_for('slide', name='legacy-data-formats') }}" class="button slide-nav">Legacy Data Formats</a>
+    <a href="{{ url_for('slide', name='semantic-web') }}" class="button slide-nav">Semantic Web</a>
+    <a href="{{ url_for('slide', name='bibframe') }}" class="button slide-nav">BIBFRAME</a>
+    <a href="{{ url_for('slide', name='early-experiments') }}" class="button slide-nav">Early Experiments</a>
+    <a href="{{ url_for('slide', name='bibcat') }}" class="button slide-nav">BIBCAT</a>
+    <a href="{{ url_for('slide', name='tiger-catalog') }}" class="button slide-nav">TIGER Catalog</a>
+  </div>
+  {% endblock %}
+

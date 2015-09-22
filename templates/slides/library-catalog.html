@@ -5,7 +5,34 @@
   <div class="container">
    <h1>The Library's Catalog</h1>
    <section class="one-half column">
-     <h3>A Short, Biased History</h3>
+     <h3>A Short History</h3>
+     <table>
+      <tbody>
+       <tr>
+         <th>1790s</th>
+         <td>
+            First "library" cards where used in French
+            libraries on the back of playing cards.
+         </td>
+       </tr>
+       <tr>
+         <th>1841</th>
+         <td>Sir Antonio Panizzi publishes 
+           <em>91 Rules for Standardizing the Cataloguing of Books</em>
+          for the British Museum (now Library).
+         <td>
+       </tr>
+      <tbody>
+     </table>
+   </section>
+   <section class="one-half">
+     <img src="{{ url_for("static", filename="images/91-rules-page-1.png") }}" style="width: 300px; height:auto">
    </section>
   </div>
+{% endblock %}
+
+{% block slide_nav %}
+<div class="container">
+<a href="{{ url_for('slide', name='legacy-data-formats') }}" class="button slide-nav u-pull-right button-primary">Legacy Data Formats &gt;&gt;</a>
+</div>
 {% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block main %}
+  <!-- Primary Page Layout -->
+  <div class="container">
+   <h1>BIBCAT</h1>
+   <p>
+     In the fall of 2014, the Library of Congress solicited bids for a
+     new BIBFRAME Search and Display system. Aaron Schmidt of Influx
+     Library User Interface Design and Jeremy Nelson successful proposal
+     is <a href="http://bibcat.org">
+      <img src="{{ url_for('static', filename='images/bibcat.png') }}"
+      class="img-thumbnail pull-left" alt="BIBCAT - BIBFRAME Catalog"></a> 
+     the basis for open-source the
+     <a href="https://github.com/jermnelson/bibframe-catalog">BIBFRAME Catalog</a> (shortened to BIBCAT) and a backend
+     <a href="https://github.com/jermnelson/BIBFRAME-Datastore.git">BIBFRAME Datastore</a> that extends the Semantic Server REST
+     API to communicate wth Fedora 4 as a linked-data platform,  
+     a Elasticsearch for search, and Blazegraph as a SPARQL endpoint.
+    </p>
+  </div>
+{% endblock %}
+
+
+{% block slide_nav %}
+<div class="container">
+ <a href="{{ url_for('slide', name='early-experiments') }}" class="button slide-nav">&lt;&lt; Early Experiments</a>
+ <a href="{{ url_for('slide', name='tiger-catalog') }}" class="button slide-nav u-pull-right button-primary">TIGER Catalog &gt;&gt;</a>
+</div>
+{% endblock %}

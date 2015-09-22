@@ -3,6 +3,15 @@
 {% block main %}
   <!-- Primary Page Layout -->
   <div class="container">
-   <h1>Early Experiments</h1>
+   <h1>Early Experiments @ Colorado College</h1>
   </div>
+{% endblock %}
+
+{% block slide_nav %}
+<div class="container">
+  <section class="eleven columns">
+  <a href="{{ url_for('slide', name='bibframe') }}" class="button slide-nav">&lt;&lt; BIBFRAME</a>
+  <a href="{{ url_for('slide', name='bibcat') }}" class="button slide-nav u-pull-right button-primary">BIBCAT &gt;&gt;</a>
+  </section>
+</div>
 {% endblock %}
