@@ -4,6 +4,36 @@
   <!-- Primary Page Layout -->
   <div class="container">
    <h1>Early Experiments @ Colorado College</h1>
+   <div class="row">
+    <section class="seven columns">
+     <a href="https://www.coloradocollege.edu"><img src="{{ url_for('static', filename='images/cclogo.jpg') }}" alt="Colorado College"></a>
+     <p>
+      Almost immediately after starting at Colorado College in 2010, Nelson's   
+      began automating MARC record manipulation for
+      loading into Colorado College's legacy <a href="http://tiger.coloradocollege.edu/">ILS</a> as well as work on a 
+      thesis submission web application
+      to Colorado College's <a href="https://digitalcc.coloradocollege.edu/">digital repository</a>.
+     </p>
+    </section>
+   </div>
+   <hr>
+   <div class="row">
+     <div class="four columns">
+      <img class="" src="{{ url_for('static', filename='images/code4lib-2012.jpg') }}" alt="Code4Lib 2012">
+     </div>
+     <section class="seven columns">
+        <p>
+          Initially experimentation with using Redis as a bibliographic datastore
+          began in 2011 with attempting to model FRBR entities in Redis using a
+          key pattern to represent the core properties of a FRBR entity 
+          <a href="http://discovery.coloradocollege.edu/code4lib/">
+            
+          </a>. This research tested the capabilities of Redis's key-value datastore server starting with 
+          FRBR, and later moving to other vocabularies like VRA Core and FRBRoo. This project is available at
+          <a href="https://github.com/jermnelson/FRBR-Redis-Datastore">https://github.com/jermnelson/FRBR-Redis-Datastore</a> 
+        </p>
+     </section>
+   </div>
   </div>
 {% endblock %}
 
