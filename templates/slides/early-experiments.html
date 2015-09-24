@@ -3,7 +3,7 @@
 {% block main %}
   <!-- Primary Page Layout -->
   <div class="container">
-   <h1>Early Experiments @ Colorado College</h1>
+   <h1>Early Experiments @</h1>
    <div class="row">
     <section class="seven columns">
      <a href="https://www.coloradocollege.edu"><img src="{{ url_for('static', filename='images/cclogo.jpg') }}" alt="Colorado College"></a>
@@ -19,23 +19,85 @@
    <hr>
    <div class="row">
      <div class="four columns">
-      <img class="" src="{{ url_for('static', filename='images/code4lib-2012.jpg') }}" alt="Code4Lib 2012">
+      <img class="" src="{{ url_for('static', filename='images/code4lib-2012.png') }}" alt="Code4Lib 2012">
      </div>
-     <section class="seven columns">
+     <article class="seven columns">
+        <h2>FRBR-Redis Datastore<br><small>2011-2012</small></h2>
         <p>
           Initially experimentation with using Redis as a bibliographic datastore
           began in 2011 with an attemp to model FRBR entities using a
-          key pattern to represent the core properties of a FRBR entity 
-          <a href="http://discovery.coloradocollege.edu/code4lib/">
-            
-          </a>. This research tested the capabilities of Redis's key-value datastore server starting with 
+          key pattern to represent the core properties of a FRBR entity highlighted in 2012
+          <a href="http://discovery.coloradocollege.edu/code4lib/">presentation</a> at Code4Lib annual 
+          conference.
+        </p>
+        <p>     
+          This research tested the capabilities of <a href="http://redis.io">Redis</a> - a NoSQL
+          key-value datastore server - starting with 
           FRBR, and later moving to other vocabularies like VRA Core and FRBRoo. This project is available at
           <a href="https://github.com/jermnelson/FRBR-Redis-Datastore">https://github.com/jermnelson/FRBR-Redis-Datastore</a> 
         </p>
-     </section>
+     </article>
    </div>
    <hr>
-
+   <div class="row">
+    <section class="six columns">
+     <img src="{{ url_for('static', filename='images/ccetd.png') }}" >
+    </section>
+    <section class="six columns">
+      <h2>
+        Aristotle Library Apps<br><small>2011-2015</small></h2>
+      <p>Initial
+       development of a web application that started in 2011 with the purpose to allow
+       Colorado College seniors to self-submit their Thesis and supporting datasets to
+       the Library's <a href="https://digitalcc.coloradocollege.edu">Digital Repository</a>.
+       This approach resulted in a couple of
+       other internal applications, including a Fedora Repository PID mover and
+       a metadata batch application for adding multiple Fedora Objects using a
+       template.
+      </p>
+    </section>
+   </div>
+   <hr>
+   <div class="row">
+    <article class="seven columns">
+     <h2>Aristotle Discovery Layer<br><small>2012-2014</small></h2>
+     <p>The first public bibliographic systems developed at Colorado College is 
+      Aristotle, a bibliographic Django project for creating discovery and 
+      <a href="http://lucene.apache.org/solr/">
+      <img src="{{ url_for('static', filename='images/solr-tn.png') }}" class="u-pull-left">
+      </a>
+      management of born digital and physical artifacts. Aristotle uses a number 
+      of other open-source toolset including EULFedora, EULXML, Sunburnt, and PyMARC. 
+     <p>
+     <p>
+      For the Discovery interface, Aristotle uses a forked version of the Kochief Django application.
+     </p>
+    </article>
+    <section class="four columns">
+     <img src="{{ url_for('static', filename='images/discovery-coloradocollege-edu.png') }}" 
+        style="width: 400px">
+    </section>
+   </div>
+   <hr>
+   <div class="row">
+      <section class="five columns">
+        <img src="{{ url_for('static', filename='images/prospector-redis-lib-services-platform.png') }}"
+         style="width: 325px">
+       </section>
+      <article class="seven columns">
+       <h2>Prospector Discovery App<br><small>2013</small></h2>
+       <p>
+         For a 2013 Code4Lib presentation, a new Django app was created in the 
+         Aristotle Library Apps that used a random selection 
+         from the member libraries of the 
+         <a href="https://www.coalliance.org/">Colorado Alliance of Research 
+         Libraries's</a> union catalog. A custom mapping between MARC to the 
+         then BIBFRAME model was developed that converted MARC21 to Redis 
+        BIBFRAME Redis data structures. 
+       </p>
+      </article>
+    </div>
+   <hr>
   </div>
 {% endblock %}
 

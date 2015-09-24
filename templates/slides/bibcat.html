@@ -4,19 +4,31 @@
   <!-- Primary Page Layout -->
   <div class="container">
    <h1>BIBCAT</h1>
+   <h3 class='u-pull-right'><a href="http://bibcat.org/">http://bibcat.org/</a></h3>
    <p>
      In the fall of 2014, the Library of Congress solicited bids for a
      new BIBFRAME Search and Display system. Aaron Schmidt of Influx
      Library User Interface Design and Jeremy Nelson successful proposal
-     is <a href="http://bibcat.org">
+     is 
+     <span class="u-pull-left">
       <img src="{{ url_for('static', filename='images/bibcat.png') }}"
-      class="img-thumbnail pull-left" alt="BIBCAT - BIBFRAME Catalog"></a> 
+       style="padding: 1em" alt="BIBCAT - BIBFRAME Catalog"> <br>
+      Screen-shot of BIBCAT's first iteration
+     </span>
      the basis for open-source the
      <a href="https://github.com/jermnelson/bibframe-catalog">BIBFRAME Catalog</a> (shortened to BIBCAT) and a backend
      <a href="https://github.com/jermnelson/BIBFRAME-Datastore.git">BIBFRAME Datastore</a> that extends the Semantic Server REST
-     API to communicate wth Fedora 4 as a linked-data platform,  
-     a Elasticsearch for search, and Blazegraph as a SPARQL endpoint.
+     API to communicate wth <a href="http://fedora-commons.org">Fedora 4</a> as a linked-data platform,  
+     a <a href="https://www.elastic.co/products/elasticsearch">Elasticsearch</a> for search, and 
+     <a href="https://www.blazegraph.com/">Blazegraph</a> as a SPARQL endpoint.
     </p>
+    <div class="row">
+     <section class="nine columns">
+       <h3>Current BIBCAT Iteration</h3>
+       <iframe ></iframe>
+
+     </section>
+    </div>
   </div>
 {% endblock %}
 
