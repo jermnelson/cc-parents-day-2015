@@ -6,7 +6,67 @@
    <h1>Library Legacy Data</h1>
    <p>The Library of Congress in the late 1960s proposed an electronic 
     library format called MARC for <strong>MA</strong>chine <strong>R</strong>eadable
-    <strong>C</strong>arrier. 
+    <strong>C</strong>arrier.
+     <h3>Example of <em>Pride &amp; Prejudice</em> MARC21 record</h3>
+    <div class="row">
+     <section class="nine columns">
+      <pre>
+       <code>
+=LDR  00789nam  2200253Ii 4500
+=001  4124646
+=003  OCoLC
+=005  19980413123232.0
+=008  780810s1946\\\\ohua\\\\\\\\\\000\1\eng\d
+=035  \\$a.b13135971$btbp$c-
+=040  \\$aIQU$cIQU
+=049  \\$aCOCA
+=090  \\$aPR4034.P7 1946b
+=090  \\$aPR4034$b.P7 1946b
+=100  1\$aAusten, Jane,$d1775-1817.
+=245  10$aPride and prejudice /$cJane Austen ; with illustrations by Edgard Cirlin.
+=260  \\$aCleveland :$bFine Editions Press,$c1946.
+=300  \\$a435 p. :$bill. ;$c21 cm.
+=700  1\$aCirlin, Edgard,$d1913-
+=907  \\$a.b13135971
+=902  \\$a130106
+=999  \\$b2$c980413$dm$ea$f-$g0
+=994  \\$atbp
+=945  \\$aPR4034.P7 1946b$g1$i33027004811729$j0$ltbp  $h0$oh$p$0.00$q $r-$s-$t1$u11$v4$w0$x0$y.i1373510x$z980413
+       </code>
+      </pre>
+     </section>
+     <section class="three columns">
+       <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>About</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Record identifier</td>      
+          </tr>
+          <tr>
+            <td>090</td>
+            <td>Library of Congress Call Number</td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>Author/creator field</td>
+          </tr>
+        </tbody>
+       </table>
+     </section>
+   </div>
+   <div class="row">
+    <section class="eleven columns"> 
+      <iframe src="http://tiger.coloradocollege.edu/record=b1313597"
+        frameborder="0" border="0" cellspacing="0" width="100%" height="800px"
+        ></iframe>
+    </section>
+   </div> 
   </div>
 {% endblock %}
 
