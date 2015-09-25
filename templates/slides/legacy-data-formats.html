@@ -6,7 +6,7 @@
    <h1>Library Legacy Data</h1>
    <p>The Library of Congress in the late 1960s proposed an electronic 
     library format called MARC for <strong>MA</strong>chine <strong>R</strong>eadable
-    <strong>C</strong>arrier.
+    <strong>C</strong>ataloging.
      <h3>Example of <em>Pride &amp; Prejudice</em> MARC21 record</h3>
     <div class="row">
      <section class="nine columns">
@@ -46,15 +46,31 @@
         <tbody>
           <tr>
             <td>001</td>
-            <td>Record identifier</td>      
+            <td>Control (identifier) Number for the Record</td>      
           </tr>
           <tr>
             <td>090</td>
-            <td>Library of Congress Call Number</td>
+            <td>Local Call Number (CC uses Library of Congress Call Number)</td>
           </tr>
           <tr>
             <td>100</td>
-            <td>Author/creator field</td>
+            <td>Personal Name for Author/creator</td>
+          </tr>
+           <tr>
+            <td>245</td>
+            <td>Title Statement</td>
+          </tr>
+          <tr>
+            <td>260</td>
+            <td>Publication, Distribution, etc. statements</td>
+          </tr>
+          <tr>
+            <td>300</td>
+            <td>Physical Description</td>
+          </tr>
+          <tr>
+            <td>700</td>
+            <td>Added Entry-Personal Name</td> 
           </tr>
         </tbody>
        </table>

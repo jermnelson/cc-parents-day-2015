@@ -31,6 +31,94 @@
 
     </article>
    </div>
+   <div class="row">
+     <section class="eleven columns">
+      <h3>Pride &amp; Prejudice BIBFRAME RDF Graph</h3>
+<pre>
+<code>
+@prefix bf: &lt;http://bibframe.org/vocab/&gt; .
+@prefix bf2: &lt;http://bibframe.org/vocab2/&gt; .
+@prefix madsrdf: &lt;http://www.loc.gov/mads/rdf/v1#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix relators: &lt;http://id.loc.gov/vocabulary/relators/&gt; .
+@prefix xml: &lt;http://www.w3.org/XML/1998/namespace&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;http://catalog.coloradocollege.edu/4124646annotation12&gt; a bf:Annotation ;
+    bf:annotates &lt;http://catalog.coloradocollege.edu/4124646&gt; ;
+    bf:changeDate "1998-04-13T12:32" ;
+    bf:derivedFrom &lt;http://catalog.coloradocollege.edu/4124646.marcxml.xml&gt; ;
+    bf:descriptionConventions &lt;http://id.loc.gov/vocabulary/descriptionConventions/isbd&gt; ;
+    bf:descriptionSource &lt;http://id.loc.gov/vocabulary/organizations/iqu&gt; ;
+    bf:generationProcess "DLC transform-tool:2015-07-23-T17:01:00" .
+
+&lt;http://catalog.coloradocollege.edu/4124646instance13&gt; a bf:Instance,
+        bf:Monograph ;
+    bf:dimensions "21 cm." ;
+    bf:extent "435 p. :" ;
+    bf:illustrationNote "ill. ;" ;
+    bf:instanceOf &lt;http://catalog.coloradocollege.edu/4124646&gt; ;
+    bf:instanceTitle &lt;http://catalog.coloradocollege.edu/4124646title16&gt; ;
+    bf:modeOfIssuance "single unit" ;
+    bf:providerStatement "Cleveland : Fine Editions Press, 1946." ;
+    bf:publication [ a bf:Provider ;
+            bf:providerDate "1946" ;
+            bf:providerName [ a bf:Organization ;
+                    bf:label "Fine Editions Press" ] ;
+            bf:providerPlace [ a bf:Place ;
+                    bf:label "Cleveland " ] ] ;
+    bf:systemNumber [ a bf:Identifier ;
+            bf:identifierAssigner "tbp" ;
+            bf:identifierScheme &lt;http://id.loc.gov/vocabulary/identifiers/systemNumber&gt; ;
+            bf:identifierValue ".b13135971" ] ;
+    bf:titleStatement "Pride and prejudice" .
+
+&lt;http://catalog.coloradocollege.edu/4124646classification10&gt; a bf:Classification ;
+    bf:classificationNumber "PR4034" ;
+    bf:classificationScheme "" .
+
+&lt;http://catalog.coloradocollege.edu/4124646classification9&gt; a bf:Classification ;
+    bf:classificationNumber "PR4034.P7 1946b" ;
+    bf:classificationScheme "" .
+
+&lt;http://catalog.coloradocollege.edu/4124646person6&gt; a bf:Person ;
+    bf:authorizedAccessPoint "Austen, Jane, 1775-1817." ;
+    bf:hasAuthority [ a madsrdf:Authority ;
+            madsrdf:authoritativeLabel "Austen, Jane, 1775-1817." ] ;
+    bf:label "Austen, Jane, 1775-1817." .
+
+&lt;http://catalog.coloradocollege.edu/4124646person7&gt; a bf:Person ;
+    bf:authorizedAccessPoint "Cirlin, Edgard, 1913-" ;
+    bf:hasAuthority [ a madsrdf:Authority ;
+            madsrdf:authoritativeLabel "Cirlin, Edgard, 1913-" ] ;
+    bf:label "Cirlin, Edgard, 1913-" .
+
+&lt;http://catalog.coloradocollege.edu/4124646title16&gt; a bf:Title ;
+    bf:label "Pride and prejudice / Jane Austen ; with illustrations by Edgard Cirlin." ;
+    bf:titleValue "Pride and prejudice" .
+
+&lt;http://catalog.coloradocollege.edu/4124646title5&gt; a bf:Title ;
+    bf:label "Pride and prejudice / Jane Austen ; with illustrations by Edgard Cirlin." ;
+    bf:titleValue "Pride and prejudice" .
+
+&lt;http://catalog.coloradocollege.edu/4124646&gt; a bf:Text,
+        bf:Work ;
+    bf:authorizedAccessPoint "Austen, Jane, 1775-1817. Pride and prejudice / Jane Austen ; with illustrations by Edgard Cirlin.Pride and prejudice",
+        "austenjane17751817cirlinedgard1913prideandprejudiceengworktext"@x-bf-hash ;
+    bf:classification &lt;http://catalog.coloradocollege.edu/4124646classification10&gt;,
+        &lt;http://catalog.coloradocollege.edu/4124646classification9&gt; ;
+    bf:contributor &lt;http://catalog.coloradocollege.edu/4124646person7&gt; ;
+    bf:creator &lt;http://catalog.coloradocollege.edu/4124646person6&gt; ;
+    bf:language &lt;http://id.loc.gov/vocabulary/languages/eng&gt; ;
+    bf:workTitle &lt;http://catalog.coloradocollege.edu/4124646title5&gt; .
+
+
+
+</code>
+</pre>
+     </section>
+   </div>
   </div>
 {% endblock %}
 

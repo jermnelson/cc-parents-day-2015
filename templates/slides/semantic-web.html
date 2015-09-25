@@ -4,6 +4,80 @@
   <!-- Primary Page Layout -->
   <div class="container">
    <h1>Semantic Web</h1>
+   <p>The <a href="http://www.w3.org/standards/semanticweb/">Semantic Web</a> is 
+      an international effort to bring machine-readable data to the web called linked
+      data and was started by Sir Tim Berners-Lee, the inventor of the world-wide-web. 
+      Linked Data is based on a RDF (Resource Description Framework) graphs made up a series of statements,
+      called triples, that take the form <strong>subject</strong> - <strong>predicate</strong>
+         - <strong>object</strong>.
+   </p>
+   <p>
+    Libraries standards are shifting to Linked-Data vocabularies like 
+    <a href="http://bibframe.org/">BIBFRAME</a> and <a href="http://schema.org/">Schema.org</a>. RDA and MARC can also be reformulated into Linked Data triples as well. 
+   </p>
+  <div class="row">
+   <article class="four columns">
+        <h3>Subjects</h3>
+        A subject resource can be:
+        <ul>
+         <li>IRI</li>
+         <li>Blank Node</li>
+        </ul>
+   </article>
+   <article class="four columns">
+        <h3>Predicates</h3>
+       <p>
+       A relationship between the <strong>subject</strong> and 
+       <strong>object</strong> is called a property.
+       </p>
+       <p>
+         A predicate must be an IRI.
+       </p>      
+   </article>
+   <article class="four columns">
+        <h3>Objects</h3>
+        An object resource can be
+        <ul>
+         <li>IRI</li>
+         <li>Blank Node</li>
+         <li>Literal</li>
+        </ul>
+   </article>
+
+   </div>
+   <div class="row">
+    <article class="four columns">
+       <h3 >Freddie Blevins Oral History</h3>
+        <p>
+        To describe the Freddie Blevins oral history from Colorado College's collection of interviews with women
+        from the Western Slope, a simple RDF metadata graph of this audio object is presented at the right.
+<a href="https://digitalcc.coloradocollege.edu/islandora/object/coccc:2478">https://digitalcc.coloradocollege.edu/islandora/object/coccc:2478</a>
+        at this <strong>IRI</strong> (International Resource Identifier). IRIs identifies a resource with URLs 
+being the most common form of an IRI.
+       </p>
+     </article>
+     <section class="eight columns">
+ <h3>RDF Graph in Turtle Format</h3>
+<code>
+<pre>
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix schema: &lt;http://schema.org/&gt; .
+@prefix xml: &lt;http://www.w3.org/XML/1998/namespace&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+&lt;https://digitalcc.coloradocollege.edu/islandora/object/coccc:2478&gt; a schema:AudioObject ;
+    schema:creator [ a schema:Person ;
+            schema:givenName "Freddie" ;
+            schema:name "Freddie White Blevins" ] ;
+    schema:dateCreated "1984-09-27" ;
+    schema:duration "01:40:00" ;
+    schema:familyName "Blevins" .
+</pre>
+</code>
+   </section>
+   </div>
+
   </div>
 {% endblock %}
 
